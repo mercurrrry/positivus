@@ -1,0 +1,40 @@
+.contact-us {
+  position: relative;
+  padding: 60px 100px 80px;
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius-large);
+  overflow-x: hidden;
+}
+.contact-us::after {
+  --contactUsIImageOffsetY: 62px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  translate: -50% -50%;
+  height: calc(100% - var(--contactUsIImageOffsetY) * 2);
+  aspect-ratio: 1;
+  background: url(../../images/contact-us-bg.svg) center/contain no-repeat;
+  @inc;
+}
+.contact-us__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+  max-width: 556px;
+}
+.contact-us__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}/*# sourceMappingURL=contact-us.css.map */
